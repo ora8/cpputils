@@ -1,11 +1,11 @@
 {
-  "name": "Utils",          // Name der Bibliothek
+  "name": "CppUtils",          // Name der Bibliothek
   "version": "1.0.0",                 // Semantische Versionsnummer
-  "description": "Basic utils library for PlatformIO",
+  "description": "Basic C++ utils library for PlatformIO",
   "authors": "urs.wagner.ch@gmx.ch",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ora8/utils.git"
+    "url": "https://github.com/ora8/cpputils.git"
   },
   "license": "MIT",                   // Lizenz (z. B. MIT, Apache-2.0, GPL)
   "frameworks": "arduino",            // Unterstützte Frameworks (z. B. arduino, mbed, espidf)
