@@ -1,0 +1,18 @@
+{
+  "name": "Utils",          // Name der Bibliothek
+  "version": "1.0.0",                 // Semantische Versionsnummer
+  "description": "Basic utils library for PlatformIO",
+  "authors": "urs.wagner.ch@gmx.ch",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ora8/utils.git"
+  },
+  "license": "MIT",                   // Lizenz (z. B. MIT, Apache-2.0, GPL)
+  "frameworks": "arduino",            // Unterstützte Frameworks (z. B. arduino, mbed, espidf)
+  "platforms": ["atmega328", "esp32", "xmc"], // Unterstützte Plattformen
+  "dependencies": {                   // Abhängigkeiten zu anderen Bibliotheken
+  },
+  "examples": ["sample_1"],         // Beispielprogramme
+  "keywords": ["Sample", "Demo"],   // Schlüsselwörter für die Suche
+  "category": "C++ basic utils"           // Kategorie (z. B. "Signal Processing", "Communication")
+}
