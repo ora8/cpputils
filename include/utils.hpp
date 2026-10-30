@@ -7,7 +7,7 @@
 // Für trivially copyable Typen
 template <typename T, size_t N>
 void safe_memcpy(T (&destination)[N], const T (&source)[N]) {
-    static_assert(std::is_trivially_copyable_v<T>,
+    static_assert(std::is_trivially_copyable<T>::value,
                  "Type must trivially copyable");
     std::memcpy(destination, source, N * sizeof(T));
 }
@@ -20,7 +20,7 @@ void safe_copy(T (&destination)[N], const T (&source)[N]) {
 
 template<typename T, size_t N, size_t M>
 void safe_memcpy(T (&destination)[N], const T (&source)[M]) {
-        static_assert(std::is_trivially_copyable_v<T>,
+        static_assert(std::is_trivially_copyable<T>::value,
                  "Type must trivially copyable");
     if (M <= N) {
         std::memcpy(destination, source, M * sizeof(T));
